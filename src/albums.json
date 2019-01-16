@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Yungstar",
+    "image":
+      "/images/yungstar.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Big Tymers",
+    "image":
+      "/images/bt1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Chopper City",
+    "image":
+      "/images/choppercity.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Hot Boys",
+    "image":
+      "/images/hotboys.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Lil Wayne",
+    "image":
+      "/images/lilwayne.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Master P",
+    "image":
+      "/images/masterp.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Playa G",
+    "image":
+      "/images/playg.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Mr. Servon",
+    "image":
+      "/images/servon.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Silkk Tha Shocker",
+    "image":
+      "/images/silkk.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Snoop Dogg",
+    "image":
+      "/images/snoop.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "UNLV",
+    "image":
+      "/images/unlv.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Dr. Dooom",
+    "image":
+      "/images/drdooom.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Kingpin Skinny Pimp",
+    "image":
+      "/images/kpsp.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Three 6 Mafia",
+    "image":
+      "/images/teardaclub.jpg"
+  },
+  {
+    "id": 15,
+    "name": "8Ball & MJG",
+    "image":
+      "/images/8ball.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Soulja Slim",
+    "image":
+      "/images/soulja.jpg"
+  }
+]

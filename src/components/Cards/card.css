@@ -1,0 +1,49 @@
+/* .card {
+  background: #fff;
+  border-radius: 2px;
+  height: 30%;
+  margin: 1rem;
+  position: relative;
+  width: 30%;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+} */
+/* 
+.card > .img-container {
+  height: 60%;
+  overflow: hidden;
+  text-align: center;
+  background:#6CADDC;
+} */
+img {
+    width: 75%;
+    height: 75%;
+    /* display: inline-block; */
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* .card > .content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 15px;
+}
+
+.card > .content > ul {
+  list-style-type: none;
+}
+
+.card > .content > ul > li {
+  margin-top: 18px;
+} */
