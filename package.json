@@ -23,5 +23,19 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sameaton89/19-memory-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sameaton89/19-memory-game/issues"
+  },
+  "homepage": "https://github.com/sameaton89/19-memory-game#readme"
 }
