@@ -4,79 +4,113 @@ import Wrapper from "./components/Wrapper";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Cards from "./components/Cards";
-import albums from "./albums.json";
 // import $ from 'jquery'; 
 // import "./components/Game";
+const images = [
+  {
+    id: 1,
+    name: "Yungstar",
+    image:
+      "/images/yungstar.jpg"
+  },
+  {
+    id: 2,
+    name: "Big Tymers",
+    image:
+      "/images/bt1.jpg"
+  },
+  {
+    id: 3,
+    name: "Chopper City",
+    image:
+      "/images/choppercity.jpg"
+  },
+  {
+    id: 4,
+    name: "Hot Boys",
+    image:
+      "/images/hotboys.jpg"
+  },
+  {
+    id: 5,
+    name: "Lil Wayne",
+    image:
+      "/images/lilwayne.jpg"
+  },
+  {
+    id: 6,
+    name: "Master P",
+    image:
+      "/images/masterp.jpg"
+  },
+  {
+    id: 7,
+    name: "Playa G",
+    image:
+      "/images/playg.jpg"
+  },
+  {
+    id: 8,
+    name: "Mr. Servon",
+    image:
+      "/images/servon.jpg"
+  },
+  {
+    id: 9,
+    name: "Silkk Tha Shocker",
+    image:
+      "/images/silkk.jpg"
+  },
+  {
+    id: 10,
+    name: "Snoop Dogg",
+    image:
+      "/images/snoop.jpeg"
+  },
+  {
+    id: 11,
+    name: "UNLV",
+    image:
+      "/images/unlv.jpg"
+  },
+  {
+    id: 12,
+    name: "Dr. Dooom",
+    image:
+      "/images/drdooom.jpg"
+  },
+  {
+    id: 13,
+    name: "Kingpin Skinny Pimp",
+    image:
+      "/images/kpsp.jpg"
+  },
+  {
+    id: 14,
+    name: "Three 6 Mafia",
+    image:
+      "/images/teardaclub.jpg"
+  },
+  {
+    id: 15,
+    name: "8Ball & MJG",
+    image:
+      "/images/8ball.jpg"
+  },
+  {
+    id: 16,
+    name: "Soulja Slim",
+    image:
+      "/images/soulja.jpg"
+  }
+]
+
 
 const App = () => (
   <Wrapper>
     <Nav />
     <Header />
-    <Cards
-      name={albums[0].name}
-      image={albums[0].image}
-    />
-    <Cards
-      name={albums[1].name}
-      image={albums[1].image}
-    />
-    <Cards
-      name={albums[2].name}
-      image={albums[2].image}
-    />
-    <Cards
-      name={albums[3].name}
-      image={albums[3].image}
-    />
-    <Cards
-      name={albums[4].name}
-      image={albums[4].image}
-    />
-    <Cards
-      name={albums[5].name}
-      image={albums[5].image}
-    />
-    <Cards
-      name={albums[6].name}
-      image={albums[6].image}
-    />
-    <Cards
-      name={albums[7].name}
-      image={albums[7].image}
-    />
-    <Cards
-      name={albums[8].name}
-      image={albums[8].image}
-    />
-    <Cards
-      name={albums[9].name}
-      image={albums[9].image}
-    />
-    <Cards
-      name={albums[10].name}
-      image={albums[10].image}
-    />   
-    <Cards
-    name={albums[11].name}
-    image={albums[11].image}
-  />
-     <Cards
-    name={albums[12].name}
-    image={albums[12].image}
-  />
-     <Cards
-    name={albums[13].name}
-    image={albums[13].image}
-  />
-     <Cards
-    name={albums[14].name}
-    image={albums[14].image}
-  />
-     <Cards
-    name={albums[15].name}
-    image={albums[15].image}
-  />
-
+    <Cards images={images}/>
   </Wrapper>
 )
                   

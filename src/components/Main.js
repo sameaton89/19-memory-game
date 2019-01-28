@@ -1,9 +1,24 @@
 import React from "react";
+import shuffle from "lodash";
 // import render from "./components/Game";
 
+// By extending the React.Component class, Counter inherits functionality from it
+class Counter extends React.Component {
+    // Setting the initial state of the Counter component
+    state = {
+      topScore: 99,
+      clickedcards: [],
+      status: false,
+      guessedCorrectly: false
+    };
+  
+    shuffleCards = () => {
+      
+    }
 
-const Main = () => (
-<div className="container">
+render() {
+    return (
+        <div className="container">
     <nav className="nav-bar">
     Memory Game
         <div id="game-message">
@@ -21,25 +36,9 @@ const Main = () => (
     <div className="container" id="images">
     </div>
 </div>
-);
+    )
+}
 
-//   // The render method returns the JSX that should be rendered
-//  const render = () => {
-//     return (
-//       <div className="card text-center">
-//         <div className="card-header bg-primary text-white">
-//           Click Counter!
-//         </div>
-//         <div className="card-body">
-//           <p className="card-text">Click Count: {this.state.count}</p>
-//           <button className="btn btn-primary" onClick={this.handleIncrement}>
-//             Increment
-//           </button>
-//         </div>
-//       </div>
-//     );
-//   }
-// render();
-
+}
 
 export default Main;
