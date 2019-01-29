@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Wrapper from "./components/Wrapper";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Cards from "./components/Cards";
+import {shuffle} from "lodash";
 // import $ from 'jquery'; 
 // import "./components/Game";
+class App extends Component {
+//Guessed correctly - status: false
+  state = {
+    topScore: 0,
+    clickedCards: [],
+    status: false
+  };
+
+
+render() {
+  return(
+ <Wrapper>
+    <Nav />
+    <Header />
+    <Cards images={images}/>
+  </Wrapper>
+)}}
+
 const images = [
   {
     id: 1,
@@ -104,15 +123,6 @@ const images = [
       "/images/soulja.jpg"
   }
 ]
-
-
-const App = () => (
-  <Wrapper>
-    <Nav />
-    <Header />
-    <Cards images={images}/>
-  </Wrapper>
-)
                   
 // class App extends Component {
 //   render() {
