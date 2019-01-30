@@ -12,15 +12,10 @@ import "./card.css";
 //   </div>
 // );
 const Cards = props => (
-  <div>
-      {props.images.map(item => (
-            <div className="column" key={item.id}>
-                <div className="img-container" key={item.id}>
-
-        <img alt={item.name} src={item.image}  key={item.id}/>
-        </div>
-        </div>
-      ))}
-    </div>
+  <div className="card">
+  <div className="img-contain">
+    <img alt={props.name} src={props.image} onClick={() => props.shuffleAlbums(props.id)} className="shuffle"/>
+  </div>
+</div>
 );
 export default Cards;

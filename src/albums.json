@@ -60,12 +60,6 @@
       "/images/snoop.jpeg"
   },
   {
-    "id": 11,
-    "name": "UNLV",
-    "image":
-      "/images/unlv.jpg"
-  },
-  {
     "id": 12,
     "name": "Dr. Dooom",
     "image":
@@ -76,23 +70,5 @@
     "name": "Kingpin Skinny Pimp",
     "image":
       "/images/kpsp.jpg"
-  },
-  {
-    "id": 14,
-    "name": "Three 6 Mafia",
-    "image":
-      "/images/teardaclub.jpg"
-  },
-  {
-    "id": 15,
-    "name": "8Ball & MJG",
-    "image":
-      "/images/8ball.jpg"
-  },
-  {
-    "id": 16,
-    "name": "Soulja Slim",
-    "image":
-      "/images/soulja.jpg"
   }
 ]
