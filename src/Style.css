@@ -46,3 +46,8 @@
     color: #d50000;
   }
   
+  #game-message {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }

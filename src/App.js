@@ -15,6 +15,7 @@ class App extends Component {
   state = {
     topScore: 0,
     clickedCards: [],
+    currentScore: 0,
     status: false,
     albums
   };
@@ -24,7 +25,13 @@ render() {
   return(
  <Wrapper>
     <Nav />
+      <div id="game-message">
+          Score: {this.state.currentScore}
+          <br />
+          High Score: {this.state.topScore}
+      </div>
     <Header />
+    
 
     {this.state.albums.map(album => (
           <Cards
@@ -44,18 +51,20 @@ shuffleAlbums = id => {
   // const albums = this.state.albums.filter(album => album.id !== id);
   // Set this.state.friends equal to the new friends array
   this.setState({ albums: shuffle(this.state.albums) });
+  this.setState({ currentScore: this.state.currentScore + 1 });
+
 };
 
 handleClicks = (id) => {
-  const copyArray = [...this.state.clickedCards]
+  const copyArray = [this.state.clickedCards]
   copyArray.push(id); 
-  
+  console.log(copyArray);
   this.setState({
       score: this.state.score + 1,
       clickedCards: copyArray
   })
-  console.log("yeee");
-  this.shuffleCards();
+  console.log(this.state.clickedCards);
+  this.shuffleAlbums();
 }
 }
 
