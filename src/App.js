@@ -55,10 +55,15 @@ handleClicks = (id) => {
   this.setState({
       clickedCards: clickArray
   })
-    console.log(clickArray);
-  console.log(this.state);
-}
+  for (var i = 0; i < clickArray.length; i++) {
+    if (id === clickArray[i].id) {
+      console.log("no");
+    } else {
+      console.log("yeah")
+    }
 
+}
+}
 shuffleAlbums = id => {
   // Filter this.state.friends for friends with an id not equal to the id being removed
   // console.log(albums);
