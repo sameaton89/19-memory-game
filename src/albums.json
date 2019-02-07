@@ -60,15 +60,16 @@
       "/images/snoop.jpeg"
   },
   {
-    "id": 12,
+    "id": 11,
     "name": "Dr. Dooom",
     "image":
       "/images/drdooom.jpg"
   },
   {
-    "id": 13,
-    "name": "Kingpin Skinny Pimp",
+    "id": 12,
+    "name": "Three 6 Mafia",
     "image":
-      "/images/kpsp.jpg"
+      "/images/teardaclub.jpg"
   }
+
 ]

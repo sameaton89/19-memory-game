@@ -14,7 +14,7 @@ import "./card.css";
 const Cards = props => (
   <div className="card">
   <div className="img-contain">
-    <img alt={props.name} src={props.image} onClick={() => props.shuffleAlbums(props.id)} className="shuffle"/>
+    <img alt={props.name} src={props.image} onClick={() => props.handleClicks(props.id)} className="handleClicks"/>
   </div>
 </div>
 );

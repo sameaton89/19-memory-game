@@ -16,16 +16,18 @@ class App extends Component {
     topScore: 0,
     clickedCards: [],
     currentScore: 0,
-    status: false,
+    gameOver: false,
+    status: "",
     albums
   };
-
 
 render() {
   return(
  <Wrapper>
     <Nav />
       <div id="game-message">
+          Status: {this.state.status}
+          <br />
           Score: {this.state.currentScore}
           <br />
           High Score: {this.state.topScore}
@@ -35,7 +37,7 @@ render() {
 
     {this.state.albums.map(album => (
           <Cards
-            shuffleAlbums={this.shuffleAlbums}
+            handleClicks={this.handleClicks}
             id={album.id}
             key={album.id}
             image={album.image}
@@ -46,27 +48,48 @@ render() {
   </Wrapper>
 )}
 
+
+handleClicks = (id) => {
+  const clickArray = this.state.clickedCards; 
+  clickArray.push({id}); 
+  this.setState({
+      clickedCards: clickArray
+  })
+    console.log(clickArray);
+  console.log(this.state);
+}
+
 shuffleAlbums = id => {
   // Filter this.state.friends for friends with an id not equal to the id being removed
-  // const albums = this.state.albums.filter(album => album.id !== id);
+  // console.log(albums);
   // Set this.state.friends equal to the new friends array
   this.setState({ albums: shuffle(this.state.albums) });
+  // console.log({id});
+  // console.log(this.state.albums);
+
+;
+  
+
+
   this.setState({ currentScore: this.state.currentScore + 1 });
 
 };
 
-handleClicks = (id) => {
-  const copyArray = [this.state.clickedCards]
-  copyArray.push(id); 
-  console.log(copyArray);
-  this.setState({
-      score: this.state.score + 1,
-      clickedCards: copyArray
-  })
-  console.log(this.state.clickedCards);
+resetGame = () => {
+  this.setState ({
+      clickedCards: [],
+      currentScore: 0,
+      gameOver: false,
+      status: "",
+      albums
+  });
   this.shuffleAlbums();
 }
+
+
+
 }
+
 
 
 

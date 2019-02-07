@@ -5,7 +5,7 @@ import "./nav.css"
 
 const Nav = props =>
     <nav className="nav-bar">
-    Memory Game
+    Pen & Pixel Memory Game
     
 
     </nav>
